@@ -6,12 +6,12 @@
 #include <PubSubClient.h>
 #include <WiFiClient.h>
 
-const char* ssid = "Balaji";
-const char* password =  "barrr9940201157";
-const char* mqttServer = "192.168.0.5" ;
+const char* ssid = "SSID";
+const char* password =  "PASSWORD";
+const char* mqttServer = "IPADDRESS OR LOCALHOST" ;
 const int mqttPort = 1883;
-const char* mqttUser = "raakesh";
-const char* mqttPassword = "helloworld";
+const char* mqttUser = "MQTTUSER";
+const char* mqttPassword = "MQTTPASS";
 WiFiClient espClient;
 PubSubClient client(espClient);
 int outputpin= A0;
