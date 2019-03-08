@@ -33,7 +33,7 @@ connection.open()
 #	}
 #	)
 print("I have connected>>>")
-table = connection.table('espreal')
+table = connection.table('table name')
 print(table)
 parsed.foreachRDD(lambda rdd:
 	SaveToHBase(rdd)
@@ -51,7 +51,7 @@ def SaveToHBase(rdd):
         
         for line in rdd.collect():
              print("in for loop")
-             table.put('j',{'topics:temperature':str(line)})
+             table.put('j',{'column':str(line)})
              j=j+1
              print(line)
     else:
