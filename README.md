@@ -1,2 +1,2 @@
 # Finalyrproject
-SENSOR---->MQTT---->KAFKA----->SPARK----->DASHBOARD
+Smart Industrial Automation
